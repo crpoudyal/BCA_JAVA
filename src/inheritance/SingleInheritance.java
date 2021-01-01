@@ -1,12 +1,12 @@
 package inheritance;
 
 
-class parent {
+class Parent {
 	void parentMethod() {
 		System.out.println("I am Parent Method");
 	}
 }
-class child extends parent{
+class child extends Parent{
 	void childMethod() {
 		System.out.println("I am child Method");
 	}
@@ -16,7 +16,7 @@ class child extends parent{
 public class SingleInheritance {
 
 	public static void main(String[] args) {
-		parent p = new parent();
+		Parent p = new Parent();
 		child c = new child();
 		c.parentMethod(); 
 		p.parentMethod(); 
